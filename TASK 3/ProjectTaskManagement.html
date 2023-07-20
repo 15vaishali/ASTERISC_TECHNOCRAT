@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    :root {
+      --primary-color: #333;
+      --secondary-color: pink;
+      --accent-color: #4CAF50;
+      --hover-color: #45a049;
+      --text-color: #333333;
+      --heading-font-size: 36px;
+      --paragraph-font-size: 28px;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, var(--secondary-color), blue, purple);
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: #fff;
+      padding: 10px;
+    }
+
+    header h1 {
+      font-size: var(--heading-font-size);
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      align: right;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 30px;
+      margin-bottom: 15px;
+      color: var(--text-color);
+      font-size: var(--heading-font-size);
+    }
+    p {
+      color: var(--text-color);
+      font-size: var(--paragraph-font-size);
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .homepage-content {
+      text-align: center;
+    }
+    .homepage-buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .homepage-buttons a {
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: var(--accent-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+    }
+    .homepage-buttons a:hover {
+      background-color: var(--hover-color);
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Project Task Management</h1>
+    <nav>
+      <ul align="right">
+        <li><a href="#">Home</a></li>
+        <li><a href="C:\Users\PC\OneDrive\Documents\SignUp.html">SignUp</a></li>
+        <li><a href="C:\Users\PC\OneDrive\Documents\createproject.html">createproject</a></li>
+        <li><a href="C:\Users\PC\OneDrive\Documents\createtask.html">TaskManagement</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="homepage-content">
+      <h2>Welcome to Project Task Management System</h2>
+      <p>Manage your projects and tasks efficiently with our powerful task management system.</p>
+    </div>
+
+    <div class="homepage-buttons">
+      <a href="C:\Users\PC\OneDrive\Documents\createproject.html">Create Project</a>
+      <a href="C:\Users\PC\OneDrive\Documents\createtask.html">Create Task</a>
+    </div>
+
+  </div>
+</body>
+</html>

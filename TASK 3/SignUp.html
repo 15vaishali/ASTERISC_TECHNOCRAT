@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <header>
+    <h1>Project Task Management</h1>
+  </header>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, pink, blue, purple);
+      margin: 0;
+      padding: 0;
+    }
+	header {
+	  background-color: #333;
+	  color: #fff;
+	  padding: 20px;
+	}
+	header h1 {
+	  font-size: 36px;
+	  margin-bottom: 10px;
+	  color: white;
+	}
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+	 h1 {
+      text-align: center;
+      margin-top: 0;
+    }
+    
+    form {
+      margin-bottom: 20px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    
+    input[type="text"],
+    input[type="password"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #cccccc;
+      border-radius: 3px;
+      font-size: 14px;
+      outline: none;
+    }
+    
+    .button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+  <div class="container">
+    <form id="signup-form">
+      <h2>Sign Up</h2>
+      <label for="username">Username:</label>
+      <input type="text" id="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+
+      <br><br>
+      <button class="button" type="submit">Sign Up</button>
+      <div id="signup-message"></div>
+    </form>
+  </div>
+
+  <script>
+    // JavaScript code for signup.html
+    document.getElementById('signup-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+      // Perform Sign Up logic here
+      console.log('Sign Up form submitted');
+      document.getElementById('signup-message').textContent = 'Sign Up successful!';
+    });
+  </script>
+</body>
+</html>
